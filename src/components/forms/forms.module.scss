@@ -1,0 +1,23 @@
+@import '../../common/styles/flexContainer.module.scss';
+@import '../../common/styles/formElement.module.scss';
+
+.container {
+  @extend %flex-container;
+  max-width: 595px;
+  width: 100%;
+}
+
+.formElement {
+  @extend %formElement;
+}
+
+.formButton {
+  margin: 0 14px 1.15rem;
+  padding: 21px 23px;
+
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  background-color: #28d2d0;
+  border: none;
+}

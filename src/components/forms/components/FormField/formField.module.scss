@@ -1,0 +1,22 @@
+@import './../../../../common/styles/formElement.module.scss';
+
+.container {
+  position: relative;
+  display: flex;
+
+  min-width: 285px;
+  padding: 0 14px 1.15rem;
+}
+
+.input {
+  @extend %formElement;
+
+  margin: 0;
+  width: 100%;
+
+  padding: 21px 23px;
+  display: block;
+
+  color: #9ca8b7;
+  border: 2px solid white;
+}

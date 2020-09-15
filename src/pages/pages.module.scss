@@ -1,0 +1,39 @@
+@import '../common/styles/flexContainer.module.scss';
+
+.container {
+  @extend %flex-container;
+  max-width: 595px;
+  width: 100%;
+
+  padding: 10px 20px 30px;
+  margin-top: 80px;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  font-size: 33px;
+  font-weight: 900;
+
+  color: white;
+  text-transform: uppercase;
+}
+
+.createHeader {
+  font-size: 40px;
+}
+
+.subInfo {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+
+  margin: 13px 5rem;
+}
+
+.infoContainer {
+  margin-bottom: 18px;
+  font-family: sans-serif;
+}
