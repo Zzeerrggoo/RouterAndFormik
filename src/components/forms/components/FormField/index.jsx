@@ -16,7 +16,12 @@ function FormField(props) {
 
   return (
     <div className={styles.container}>
-      <input {...field} {...props} className={styles.input} />
+      <input
+        {...field}
+        {...props}
+        className={styles.input}
+        title={props.placeholder ?? ''}
+      />
       {isError && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );

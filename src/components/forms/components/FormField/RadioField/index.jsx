@@ -9,7 +9,12 @@ function RadioField(props) {
 
   return (
     <div className={styles.container}>
-      <input {...field} {...props} className={styles.checkInput} />
+      <input
+        {...field}
+        {...props}
+        className={styles.checkInput}
+        required
+      />
       <div className={styles.infoContainer}>
         <h2 className={styles.header}>{label}</h2>
         <h3 className={styles.subInfo}>{description}</h3>

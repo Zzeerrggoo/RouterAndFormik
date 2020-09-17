@@ -10,7 +10,7 @@ function Login() {
   return (
     <>
       <Link to={REGISTER.path} className={styles.changeFormButton}>
-        Signup
+        {REGISTER.name}
       </Link>
 
       <div className={styles.infoContainer}>

@@ -5,7 +5,7 @@ export const routeConstants = Object.freeze({
   },
 
   REGISTER: {
-    name: 'Registration',
+    name: 'Signup',
     path: '/registration',
   },
 });
