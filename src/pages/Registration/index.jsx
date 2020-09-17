@@ -12,6 +12,10 @@ function Registration() {
 
   return (
     <div className={styles.container}>
+      <Link to={LOGIN.path} className={styles.changeFormButton}>
+        {LOGIN.name}
+      </Link>
+
       <div className={styles.infoContainer}>
         <h1 className={headClass}>create an account</h1>
         <h3 className={styles.subInfo}>
@@ -20,8 +24,6 @@ function Registration() {
       </div>
 
       <CreateAccountForm />
-
-      <Link to={LOGIN.path}>{LOGIN.name}</Link>
     </div>
   );
 }

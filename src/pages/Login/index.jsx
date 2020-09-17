@@ -9,13 +9,15 @@ const { REGISTER } = routeConstants;
 function Login() {
   return (
     <>
+      <Link to={REGISTER.path} className={styles.changeFormButton}>
+        Signup
+      </Link>
+
       <div className={styles.infoContainer}>
         <h1 className={styles.header}>login to your account</h1>
       </div>
 
       <LoginForm />
-
-      <Link to={REGISTER.path}>{REGISTER.name}</Link>
     </>
   );
 }
