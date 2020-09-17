@@ -17,7 +17,7 @@ function FormField(props) {
   return (
     <div className={styles.container}>
       <input {...field} {...props} className={styles.input} />
-      {isError && <span>{error}</span>}
+      {isError && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
 }
